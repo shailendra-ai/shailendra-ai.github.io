@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Client programmes in New Zealand and South Korea" class="art-clients">
+<title>Client programmes in New Zealand and South Korea</title>
+<defs>
+<linearGradient id="clients-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="clients-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="clients-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="clients-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="clients-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-clients .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-clients .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-clients .flow{stroke-dasharray:6 8;animation:clients-flow 2.4s linear infinite}
+.art-clients .pulse{animation:clients-pulse 2.6s ease-in-out infinite}
+.art-clients .blink{animation:clients-blink 1.6s steps(2,end) infinite}
+.art-clients .scan{animation:clients-scan 3.2s ease-in-out infinite}
+.art-clients .spin{transform-origin:center;transform-box:fill-box;animation:clients-spin 12s linear infinite}
+.art-clients .float{animation:clients-float 5s ease-in-out infinite}
+@keyframes clients-flow{to{stroke-dashoffset:-28}}
+@keyframes clients-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes clients-blink{50%{opacity:.15}}
+@keyframes clients-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes clients-spin{to{transform:rotate(360deg)}}
+@keyframes clients-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+@media (prefers-reduced-motion:reduce){.art-clients *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#clients-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#clients-blur)"/>
+
+<g stroke="#22D3EE" stroke-opacity=".5" fill="none"><circle cx="240" cy="150" r="100"/><ellipse cx="240" cy="150" rx="100" ry="36"/><ellipse cx="240" cy="150" rx="100" ry="72"/><ellipse cx="240" cy="150" rx="40" ry="100"/><ellipse cx="240" cy="150" rx="75" ry="100"/><line x1="240" y1="50" x2="240" y2="250"/><line x1="140" y1="150" x2="340" y2="150"/></g>
+<circle cx="240" cy="150" r="100" fill="url(#clients-gv)" fill-opacity=".5"/>
+<g transform="translate(232 168)"><circle class="pulse" r="12" fill="#FFB020" fill-opacity=".25" stroke="#FFB020" style="animation-delay:0s"/><circle r="4" fill="#FFB020"/><text class="mono" x="0" y="32" text-anchor="middle" style="fill:#F2F0EB">SINGAPORE</text></g><g transform="translate(312 226)"><circle class="pulse" r="12" fill="#22D3EE" fill-opacity=".25" stroke="#22D3EE" style="animation-delay:0.6s"/><circle r="4" fill="#22D3EE"/><text class="mono" x="0" y="-20" text-anchor="middle" style="fill:#F2F0EB">NEW ZEALAND</text></g><g transform="translate(292 96)"><circle class="pulse" r="12" fill="#FF3D7F" fill-opacity=".25" stroke="#FF3D7F" style="animation-delay:1.2s"/><circle r="4" fill="#FF3D7F"/><text class="mono" x="0" y="-20" text-anchor="middle" style="fill:#F2F0EB">SOUTH KOREA</text></g>
+<path class="ln flow" d="M232 168 Q 300 230, 312 226" stroke="#22D3EE" stroke-width="2"/>
+<path class="ln flow" d="M232 168 Q 230 90, 292 96" stroke="#FF3D7F" stroke-width="2"/>
+<rect x="40" y="40" width="127.60000000000001" height="18" rx="9" fill="#06080D" stroke="#22D3EE" stroke-opacity=".8"/><text class="mono" x="103.80000000000001" y="52.5" text-anchor="middle" fill="#22D3EE" style="fill:#22D3EE">DL / ML OPERATIONS</text><rect x="40" y="240" width="121.4" height="18" rx="9" fill="#06080D" stroke="#FF3D7F" stroke-opacity=".8"/><text class="mono" x="100.7" y="252.5" text-anchor="middle" fill="#FF3D7F" style="fill:#FF3D7F">TABLEAU REPORTING</text>
+
+</svg>

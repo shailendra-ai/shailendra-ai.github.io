@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Voice analytics on Whisper feeding a chatbot" class="art-voice">
+<title>Voice analytics on Whisper feeding a chatbot</title>
+<defs>
+<linearGradient id="voice-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="voice-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="voice-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="voice-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="voice-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-voice .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-voice .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-voice .flow{stroke-dasharray:6 8;animation:voice-flow 2.4s linear infinite}
+.art-voice .pulse{animation:voice-pulse 2.6s ease-in-out infinite}
+.art-voice .blink{animation:voice-blink 1.6s steps(2,end) infinite}
+.art-voice .scan{animation:voice-scan 3.2s ease-in-out infinite}
+.art-voice .spin{transform-origin:center;transform-box:fill-box;animation:voice-spin 12s linear infinite}
+.art-voice .float{animation:voice-float 5s ease-in-out infinite}
+@keyframes voice-flow{to{stroke-dashoffset:-28}}
+@keyframes voice-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes voice-blink{50%{opacity:.15}}
+@keyframes voice-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes voice-spin{to{transform:rotate(360deg)}}
+@keyframes voice-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes voice-bar{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}} .art-voice .bar{animation:voice-bar 1.3s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.art-voice *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#voice-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#voice-blur)"/>
+
+<g><rect class="bar" x="50" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.00s;transform-origin:53px 145px"/><rect class="bar" x="62" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.11s;transform-origin:65px 145px"/><rect class="bar" x="74" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.22s;transform-origin:77px 145px"/><rect class="bar" x="86" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.33s;transform-origin:89px 145px"/><rect class="bar" x="98" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.44s;transform-origin:101px 145px"/><rect class="bar" x="110" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.55s;transform-origin:113px 145px"/><rect class="bar" x="122" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.66s;transform-origin:125px 145px"/><rect class="bar" x="134" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.77s;transform-origin:137px 145px"/><rect class="bar" x="146" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.88s;transform-origin:149px 145px"/><rect class="bar" x="158" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.99s;transform-origin:161px 145px"/><rect class="bar" x="170" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:1.10s;transform-origin:173px 145px"/><rect class="bar" x="182" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:1.21s;transform-origin:185px 145px"/><rect class="bar" x="194" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.02s;transform-origin:197px 145px"/><rect class="bar" x="206" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.13s;transform-origin:209px 145px"/><rect class="bar" x="218" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.24s;transform-origin:221px 145px"/><rect class="bar" x="230" y="100" width="6" height="90" rx="3" fill="url(#voice-g)" style="animation-delay:0.35s;transform-origin:233px 145px"/></g>
+<text class="mono" x="140" y="218" text-anchor="middle">WHISPER · REAL-TIME</text>
+<path class="ln flow" d="M250 145 H 300" stroke="#22D3EE" stroke-width="2"/>
+<g transform="translate(310 90)"><path d="M0 0h130a12 12 0 0 1 12 12v60a12 12 0 0 1-12 12H38l-22 20v-20H0a0 0 0 0 1 0 0z" fill="#0E121B" stroke="#FF3D7F" stroke-opacity=".8"/>
+<circle class="pulse" cx="48" cy="42" r="5" fill="#FF3D7F"/><circle class="pulse" cx="70" cy="42" r="5" fill="#FF3D7F" style="animation-delay:.3s"/><circle class="pulse" cx="92" cy="42" r="5" fill="#FF3D7F" style="animation-delay:.6s"/></g>
+<text class="mono" x="380" y="218" text-anchor="middle">CONTEXT-AWARE CHATBOT</text>
+<circle class="blink" cx="60" cy="52" r="4" fill="#A3E635"/><text class="mono" x="70" y="56">CALL IN PROGRESS</text>
+
+</svg>

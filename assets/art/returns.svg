@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Book return and adoption prediction over a 3-month horizon" class="art-returns">
+<title>Book return and adoption prediction over a 3-month horizon</title>
+<defs>
+<linearGradient id="returns-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="returns-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="returns-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="returns-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="returns-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-returns .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-returns .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-returns .flow{stroke-dasharray:6 8;animation:returns-flow 2.4s linear infinite}
+.art-returns .pulse{animation:returns-pulse 2.6s ease-in-out infinite}
+.art-returns .blink{animation:returns-blink 1.6s steps(2,end) infinite}
+.art-returns .scan{animation:returns-scan 3.2s ease-in-out infinite}
+.art-returns .spin{transform-origin:center;transform-box:fill-box;animation:returns-spin 12s linear infinite}
+.art-returns .float{animation:returns-float 5s ease-in-out infinite}
+@keyframes returns-flow{to{stroke-dashoffset:-28}}
+@keyframes returns-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes returns-blink{50%{opacity:.15}}
+@keyframes returns-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes returns-spin{to{transform:rotate(360deg)}}
+@keyframes returns-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+@media (prefers-reduced-motion:reduce){.art-returns *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#returns-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#returns-blur)"/>
+
+<g><rect x="60" y="90" width="90" height="20" rx="3" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8" transform="rotate(-2.0 100 100)" class="float" style="animation-delay:0.0s"/><rect x="64" y="68" width="90" height="20" rx="3" fill="#FF6B2C" fill-opacity=".35" stroke="#FF6B2C" stroke-opacity=".8" transform="rotate(-0.8 100 78)" class="float" style="animation-delay:0.3s"/><rect x="68" y="46" width="90" height="20" rx="3" fill="#FF3D7F" fill-opacity=".35" stroke="#FF3D7F" stroke-opacity=".8" transform="rotate(0.3999999999999999 100 56)" class="float" style="animation-delay:0.6s"/><rect x="72" y="24" width="90" height="20" rx="3" fill="#FFB020" fill-opacity=".35" stroke="#FFB020" stroke-opacity=".8" transform="rotate(1.5999999999999996 100 34)" class="float" style="animation-delay:0.8999999999999999s"/><rect x="76" y="2" width="90" height="20" rx="3" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8" transform="rotate(2.8 100 12)" class="float" style="animation-delay:1.2s"/></g>
+<text class="mono" x="110" y="230" text-anchor="middle">BOOK TITLES · ALL LINES</text>
+<path class="ln flow" d="M180 120 C 230 120, 240 60, 290 60 C 340 60, 330 120, 260 130" stroke="#FF3D7F" stroke-width="2"/>
+<path d="M258 124 l 8 2 -4 8z" fill="#FF3D7F"/>
+<text class="mono" x="250" y="48" text-anchor="middle">RETURNS</text>
+<g transform="translate(300 100)"><rect width="140" height="110" rx="8" fill="#0E121B" stroke="#22D3EE" stroke-opacity=".6"/><rect x="10" y="18" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="28" y="18" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="46" y="18" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="64" y="18" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".5" stroke="#22D3EE"/><rect x="82" y="18" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="100" y="18" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="118" y="18" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="10" y="40" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="28" y="40" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="46" y="40" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="64" y="40" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".5" stroke="#22D3EE"/><rect x="82" y="40" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="100" y="40" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="118" y="40" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="10" y="62" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="28" y="62" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="46" y="62" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="64" y="62" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".5" stroke="#22D3EE"/><rect x="82" y="62" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="100" y="62" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="118" y="62" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="10" y="84" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="28" y="84" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="46" y="84" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="64" y="84" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="82" y="84" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="100" y="84" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/><rect x="118" y="84" width="14" height="14" rx="2" fill="#F2F0EB" fill-opacity=".1" stroke="none"/>
+<text class="mono" x="70" y="128" text-anchor="middle">3-MONTH HORIZON</text></g>
+<text x="300" y="250" font-family="Syne,sans-serif" font-weight="800" font-size="22" fill="#F2F0EB">80%</text><text class="mono" x="352" y="250">ACCURACY</text>
+
+</svg>

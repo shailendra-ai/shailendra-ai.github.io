@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="LSTM forecasting of daily order volumes" class="art-forecast">
+<title>LSTM forecasting of daily order volumes</title>
+<defs>
+<linearGradient id="forecast-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="forecast-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="forecast-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="forecast-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="forecast-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-forecast .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-forecast .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-forecast .flow{stroke-dasharray:6 8;animation:forecast-flow 2.4s linear infinite}
+.art-forecast .pulse{animation:forecast-pulse 2.6s ease-in-out infinite}
+.art-forecast .blink{animation:forecast-blink 1.6s steps(2,end) infinite}
+.art-forecast .scan{animation:forecast-scan 3.2s ease-in-out infinite}
+.art-forecast .spin{transform-origin:center;transform-box:fill-box;animation:forecast-spin 12s linear infinite}
+.art-forecast .float{animation:forecast-float 5s ease-in-out infinite}
+@keyframes forecast-flow{to{stroke-dashoffset:-28}}
+@keyframes forecast-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes forecast-blink{50%{opacity:.15}}
+@keyframes forecast-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes forecast-spin{to{transform:rotate(360deg)}}
+@keyframes forecast-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+@media (prefers-reduced-motion:reduce){.art-forecast *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#forecast-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#forecast-blur)"/>
+
+<g stroke="#9AA0AB" stroke-opacity=".4"><line x1="50" y1="240" x2="440" y2="240"/><line x1="50" y1="60" x2="50" y2="240"/></g>
+<line x1="50" y1="236" x2="50" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="98" y1="236" x2="98" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="146" y1="236" x2="146" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="194" y1="236" x2="194" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="242" y1="236" x2="242" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="290" y1="236" x2="290" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="338" y1="236" x2="338" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="386" y1="236" x2="386" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/><line x1="434" y1="236" x2="434" y2="244" stroke="#9AA0AB" stroke-opacity=".5"/>
+<path d="M290 110 L 320 100 L 350 128 L 380 92 L 410 116 L 440 90 L 440 240 L 290 240 Z" fill="url(#forecast-gv)"/>
+<path class="ln" d="M50 200 L 80 170 L 110 186 L 140 150 L 170 160 L 200 128 L 230 142 L 260 118 L 290 130" stroke="#22D3EE" stroke-width="2.5"/>
+<path class="ln flow" d="M290 130 L 320 110 L 350 138 L 380 102 L 410 126 L 440 100" stroke="#FF3D7F" stroke-width="2.5"/>
+<line x1="290" y1="70" x2="290" y2="240" stroke="#FFB020" stroke-dasharray="3 5"/>
+<text class="mono" x="296" y="80" style="fill:#FFB020">TODAY</text>
+<circle class="pulse" cx="290" cy="130" r="6" fill="#FFB020"/>
+<g transform="translate(380 40)" stroke="#FF6B2C" fill="#0E121B"><rect x="-34" y="-16" width="68" height="40" rx="8"/><circle cx="-16" cy="4" r="5"/><circle cx="0" cy="4" r="5"/><circle cx="16" cy="4" r="5"/><path d="M-11 4h6M5 4h6" fill="none"/></g>
+<text class="mono" x="380" y="80" text-anchor="middle">LSTM CELL</text>
+<text x="100" y="86" font-family="Syne,sans-serif" font-weight="800" font-size="26" fill="#F2F0EB">86%</text><text class="mono" x="100" y="102">DAILY ACCURACY</text>
+
+</svg>

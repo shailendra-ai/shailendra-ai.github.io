@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Supplier delay prediction for aircraft-engine components" class="art-pratt">
+<title>Supplier delay prediction for aircraft-engine components</title>
+<defs>
+<linearGradient id="pratt-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="pratt-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="pratt-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="pratt-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="pratt-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-pratt .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-pratt .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-pratt .flow{stroke-dasharray:6 8;animation:pratt-flow 2.4s linear infinite}
+.art-pratt .pulse{animation:pratt-pulse 2.6s ease-in-out infinite}
+.art-pratt .blink{animation:pratt-blink 1.6s steps(2,end) infinite}
+.art-pratt .scan{animation:pratt-scan 3.2s ease-in-out infinite}
+.art-pratt .spin{transform-origin:center;transform-box:fill-box;animation:pratt-spin 12s linear infinite}
+.art-pratt .float{animation:pratt-float 5s ease-in-out infinite}
+@keyframes pratt-flow{to{stroke-dashoffset:-28}}
+@keyframes pratt-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes pratt-blink{50%{opacity:.15}}
+@keyframes pratt-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes pratt-spin{to{transform:rotate(360deg)}}
+@keyframes pratt-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+@media (prefers-reduced-motion:reduce){.art-pratt *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#pratt-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#pratt-blur)"/>
+
+<g transform="translate(150 150)"><circle r="92" fill="#0E121B" stroke="#22D3EE" stroke-opacity=".6"/><circle r="70" fill="none" stroke="#22D3EE" stroke-opacity=".3"/>
+<g class="spin"><path d="M0 0 L 70.0 0.0 L 69.10590983629389 11.152274462997218 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 65.77848345501359 23.94141003279681 L 61.124011015620184 34.11532320471759 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 53.62311101832846 44.99513267805775 L 45.76965437213585 52.96356047940156 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 35.00000000000001 60.6217782649107 L 24.894801923214906 65.42361070136603 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 12.155372436685129 68.93654271085457 L 1.0172689542079225 69.99260792308574 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -12.155372436685122 68.93654271085457 L -22.982961663967345 66.11946364840392 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -34.999999999999986 60.62177826491071 L -44.21110791307899 54.27133623836882 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -53.62311101832845 44.995132678057765 L -60.10674206141227 35.87728471836815 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -65.77848345501359 23.94141003279682 L -68.75261603610319 13.155903169002363 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -70.0 8.572527594031473e-15 L -69.10590983629389 -11.152274462997218 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -65.77848345501359 -23.941410032796806 L -61.12401101562018 -34.11532320471759 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -53.62311101832849 -44.99513267805772 L -45.76965437213586 -52.96356047940154 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -35.00000000000003 -60.62177826491069 L -24.894801923214917 -65.42361070136603 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L -12.155372436685123 -68.93654271085457 L -1.0172689542079 -69.99260792308574 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 12.155372436685099 -68.93654271085457 L 22.98296166396733 -66.11946364840392 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 34.99999999999995 -60.62177826491073 L 44.211107913078955 -54.271336238368846 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 53.623111018328444 -44.99513267805777 L 60.10674206141227 -35.87728471836816 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/><path d="M0 0 L 65.77848345501359 -23.941410032796803 L 68.75261603610319 -13.155903169002341 Z" fill="#22D3EE" fill-opacity=".35" stroke="#22D3EE" stroke-opacity=".8"/></g>
+<circle r="18" fill="#06080D" stroke="#FF6B2C"/><circle class="pulse" r="7" fill="#FF6B2C"/></g>
+<text class="mono" x="150" y="262" text-anchor="middle">TURBINE · COMPONENT SUPPLY</text>
+<g transform="translate(270 70)"><g transform="translate(0 0)"><rect width="170" height="16" rx="8" fill="#0E121B" stroke="#9AA0AB" stroke-opacity=".4"/><rect width="120" height="16" rx="8" fill="#22D3EE" fill-opacity=".45"/><rect class="" x="120" width="0" height="16" rx="8" fill="#FFB020"/><text class="mono" x="0" y="28">SUPPLIER 1 · ON TIME</text></g><g transform="translate(0 34)"><rect width="170" height="16" rx="8" fill="#0E121B" stroke="#9AA0AB" stroke-opacity=".4"/><rect width="90" height="16" rx="8" fill="#22D3EE" fill-opacity=".45"/><rect class="" x="90" width="0" height="16" rx="8" fill="#FFB020"/><text class="mono" x="0" y="28">SUPPLIER 2 · ON TIME</text></g><g transform="translate(0 68)"><rect width="170" height="16" rx="8" fill="#0E121B" stroke="#9AA0AB" stroke-opacity=".4"/><rect width="150" height="16" rx="8" fill="#FFB020" fill-opacity=".45"/><rect class="blink" x="150" width="20" height="16" rx="8" fill="#FFB020"/><text class="mono" x="0" y="28">SUPPLIER 3 · DELAY RISK 84%</text></g><g transform="translate(0 102)"><rect width="170" height="16" rx="8" fill="#0E121B" stroke="#9AA0AB" stroke-opacity=".4"/><rect width="70" height="16" rx="8" fill="#22D3EE" fill-opacity=".45"/><rect class="" x="70" width="0" height="16" rx="8" fill="#FFB020"/><text class="mono" x="0" y="28">SUPPLIER 4 · ON TIME</text></g></g>
+
+</svg>

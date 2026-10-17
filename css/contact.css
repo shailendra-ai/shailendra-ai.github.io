@@ -1,0 +1,37 @@
+.contact { padding: 6rem var(--gutter) 8rem; }
+.contact-card {
+  position: relative; overflow: hidden;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  max-width: 1400px;
+}
+.contact-glow {
+  position: absolute; inset: -40% -20%;
+  background:
+    radial-gradient(45% 45% at 20% 30%, rgba(var(--c2-rgb),.30), transparent 72%),
+    radial-gradient(40% 40% at 80% 20%, rgba(var(--c1-rgb),.22), transparent 72%),
+    radial-gradient(45% 45% at 60% 90%, rgba(var(--c3-rgb),.20), transparent 72%);
+  animation: contact-drift 18s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes contact-drift { to { transform: translate(6%, -4%) rotate(8deg); } }
+.contact-card .sec-head { margin-bottom: 0; }
+.contact-card .sec-title { max-width: 18ch; }
+.contact-lede { position: relative; max-width: 48ch; margin: 1.4rem 0 2rem; color: var(--muted); font-size: 1.1rem; }
+.contact-actions { position: relative; display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 3rem; }
+.contact-copy.is-done { border-color: var(--lime); color: var(--lime); box-shadow: 0 0 24px rgba(var(--lime-rgb),.35); }
+.contact-mail {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-display); font-weight: 700; letter-spacing: -.04em; line-height: 1;
+  font-size: clamp(1.35rem, 4.1vw, 4rem);
+  background: var(--grad); background-size: 200% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  overflow-wrap: anywhere;
+  transition: filter .3s var(--ease-out), background-position .6s var(--ease-out);
+}
+.contact-mail:hover { filter: drop-shadow(0 0 20px rgba(var(--c2-rgb),.6)); background-position: 100% 0; }
+.contact-meta { position: relative; display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 1.6rem 0 0; font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.contact-meta span { display: inline-flex; align-items: center; gap: .5rem; }
+.contact-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 10px var(--lime); animation: contact-blink 2.2s ease-in-out infinite; }
+@keyframes contact-blink { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .contact-glow, .contact-dot { animation: none; } }

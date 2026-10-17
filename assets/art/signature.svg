@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Signature verification with ResNet-50 and triplet loss" class="art-signature">
+<title>Signature verification with ResNet-50 and triplet loss</title>
+<defs>
+<linearGradient id="signature-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="signature-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="signature-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="signature-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="signature-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-signature .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-signature .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-signature .flow{stroke-dasharray:6 8;animation:signature-flow 2.4s linear infinite}
+.art-signature .pulse{animation:signature-pulse 2.6s ease-in-out infinite}
+.art-signature .blink{animation:signature-blink 1.6s steps(2,end) infinite}
+.art-signature .scan{animation:signature-scan 3.2s ease-in-out infinite}
+.art-signature .spin{transform-origin:center;transform-box:fill-box;animation:signature-spin 12s linear infinite}
+.art-signature .float{animation:signature-float 5s ease-in-out infinite}
+@keyframes signature-flow{to{stroke-dashoffset:-28}}
+@keyframes signature-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes signature-blink{50%{opacity:.15}}
+@keyframes signature-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes signature-spin{to{transform:rotate(360deg)}}
+@keyframes signature-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes signature-draw{to{stroke-dashoffset:0}} .art-signature .sig{stroke-dasharray:400;stroke-dashoffset:400;animation:signature-draw 3s ease-out forwards infinite alternate}
+@media (prefers-reduced-motion:reduce){.art-signature *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#signature-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#signature-blur)"/>
+
+<rect x="40" y="70" width="180" height="90" rx="8" fill="#0E121B" stroke="#22D3EE" stroke-opacity=".6"/>
+<path class="ln sig" d="M60 130 c 10 -40 20 -40 25 -5 c 5 30 15 -30 30 -20 c 15 10 10 25 30 10 c 15 -10 25 15 50 -10" stroke="#F2F0EB" stroke-width="2"/>
+<rect x="260" y="70" width="180" height="90" rx="8" fill="#0E121B" stroke="#FF3D7F" stroke-opacity=".6"/>
+<path class="ln sig" d="M280 130 c 10 -40 20 -40 25 -5 c 5 30 15 -30 30 -20 c 15 10 10 25 30 10 c 15 -10 25 15 50 -10" stroke="#F2F0EB" stroke-width="2" style="animation-delay:1s"/>
+<rect class="scan" x="42" y="72" width="176" height="2" fill="#A3E635" style="--d:84px"/>
+<text class="mono" x="130" y="178" text-anchor="middle">REFERENCE</text><text class="mono" x="350" y="178" text-anchor="middle">CANDIDATE</text>
+<g stroke="#FF6B2C" fill="#0E121B"><circle class="pulse" cx="200" cy="222" r="6" style="animation-delay:0.0s"/><circle class="pulse" cx="220" cy="222" r="6" style="animation-delay:0.2s"/><circle class="pulse" cx="240" cy="222" r="6" style="animation-delay:0.4s"/><circle class="pulse" cx="260" cy="222" r="6" style="animation-delay:0.6000000000000001s"/><circle class="pulse" cx="280" cy="222" r="6" style="animation-delay:0.8s"/><circle class="pulse" cx="210" cy="250" r="6" style="animation-delay:0.0s"/><circle class="pulse" cx="230" cy="250" r="6" style="animation-delay:0.25s"/><circle class="pulse" cx="250" cy="250" r="6" style="animation-delay:0.5s"/><circle class="pulse" cx="270" cy="250" r="6" style="animation-delay:0.75s"/></g>
+<line x1="200" y1="228" x2="210" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="200" y1="228" x2="230" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="200" y1="228" x2="250" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="200" y1="228" x2="270" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="220" y1="228" x2="210" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="220" y1="228" x2="230" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="220" y1="228" x2="250" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="220" y1="228" x2="270" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="240" y1="228" x2="210" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="240" y1="228" x2="230" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="240" y1="228" x2="250" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="240" y1="228" x2="270" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="260" y1="228" x2="210" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="260" y1="228" x2="230" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="260" y1="228" x2="250" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="260" y1="228" x2="270" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="280" y1="228" x2="210" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="280" y1="228" x2="230" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="280" y1="228" x2="250" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/><line x1="280" y1="228" x2="270" y2="244" stroke="#FF6B2C" stroke-opacity=".3"/>
+<path class="ln flow" d="M130 165 C 130 200, 180 222, 194 222" stroke="#22D3EE" stroke-width="1.5"/><path class="ln flow" d="M350 165 C 350 200, 300 222, 286 222" stroke="#FF3D7F" stroke-width="1.5"/>
+<text x="400" y="248" font-family="Syne,sans-serif" font-weight="800" font-size="22" fill="#A3E635">0.88</text><text class="mono" x="400" y="262">F-SCORE</text>
+
+</svg>

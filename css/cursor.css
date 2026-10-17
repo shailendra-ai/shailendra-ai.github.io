@@ -1,0 +1,8 @@
+.cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 1000; border-radius: 50%; transform: translate(-50%, -50%); will-change: transform; }
+.cursor-dot { width: 8px; height: 8px; background: var(--c1); box-shadow: 0 0 12px var(--c1); mix-blend-mode: screen; }
+.cursor-ring { width: 40px; height: 40px; border: 1px solid rgba(var(--c1-rgb),.6); transition: width .3s var(--ease-out), height .3s var(--ease-out), border-color .3s var(--ease-out), background-color .3s var(--ease-out); }
+.cursor-ring.is-hover { width: 64px; height: 64px; border-color: rgba(var(--c3-rgb),.9); background: rgba(var(--c3-rgb),.12); }
+.cursor-ring.is-down { width: 28px; height: 28px; }
+.cursor-hidden .cursor-dot, .cursor-hidden .cursor-ring { opacity: 0; }
+@media (pointer: coarse), (prefers-reduced-motion: reduce) { .cursor-dot, .cursor-ring { display: none; } }
+html.has-cursor, html.has-cursor a, html.has-cursor button { cursor: none; }

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Real-time GPS platform for the truck fleet" class="art-gps">
+<title>Real-time GPS platform for the truck fleet</title>
+<defs>
+<linearGradient id="gps-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="gps-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="gps-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gps-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="gps-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-gps .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-gps .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-gps .flow{stroke-dasharray:6 8;animation:gps-flow 2.4s linear infinite}
+.art-gps .pulse{animation:gps-pulse 2.6s ease-in-out infinite}
+.art-gps .blink{animation:gps-blink 1.6s steps(2,end) infinite}
+.art-gps .scan{animation:gps-scan 3.2s ease-in-out infinite}
+.art-gps .spin{transform-origin:center;transform-box:fill-box;animation:gps-spin 12s linear infinite}
+.art-gps .float{animation:gps-float 5s ease-in-out infinite}
+@keyframes gps-flow{to{stroke-dashoffset:-28}}
+@keyframes gps-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes gps-blink{50%{opacity:.15}}
+@keyframes gps-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes gps-spin{to{transform:rotate(360deg)}}
+@keyframes gps-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+@media (prefers-reduced-motion:reduce){.art-gps *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#gps-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#gps-blur)"/>
+
+<g stroke="#F2F0EB" stroke-opacity=".12"><line x1="40" y1="40" x2="40" y2="260"/><line x1="90" y1="40" x2="90" y2="260"/><line x1="140" y1="40" x2="140" y2="260"/><line x1="190" y1="40" x2="190" y2="260"/><line x1="240" y1="40" x2="240" y2="260"/><line x1="290" y1="40" x2="290" y2="260"/><line x1="340" y1="40" x2="340" y2="260"/><line x1="390" y1="40" x2="390" y2="260"/><line x1="440" y1="40" x2="440" y2="260"/><line x1="40" y1="40" x2="440" y2="40"/><line x1="40" y1="84" x2="440" y2="84"/><line x1="40" y1="128" x2="440" y2="128"/><line x1="40" y1="172" x2="440" y2="172"/><line x1="40" y1="216" x2="440" y2="216"/><line x1="40" y1="260" x2="440" y2="260"/></g>
+<path class="ln" d="M60 240 L 140 240 L 140 150 L 260 150 L 260 90 L 420 90" stroke="#9AA0AB" stroke-opacity=".5" stroke-width="6"/>
+<path class="ln flow" d="M60 240 L 140 240 L 140 150 L 260 150 L 260 90 L 420 90" stroke="url(#gps-g)" stroke-width="2.5"/>
+<g transform="translate(140 240)"><circle class="pulse" r="14" fill="#22D3EE" fill-opacity=".2" stroke="#22D3EE" style="animation-delay:0s"/><path d="M-6 6L0-7 6 6z" fill="#22D3EE"/></g><g transform="translate(260 150)"><circle class="pulse" r="14" fill="#FF3D7F" fill-opacity=".2" stroke="#FF3D7F" style="animation-delay:0.7s"/><path d="M-6 6L0-7 6 6z" fill="#FF3D7F"/></g><g transform="translate(360 90)"><circle class="pulse" r="14" fill="#FFB020" fill-opacity=".2" stroke="#FFB020" style="animation-delay:1.3s"/><path d="M-6 6L0-7 6 6z" fill="#FFB020"/></g>
+<rect x="300" y="190" width="120" height="60" rx="8" fill="#0E121B" stroke="#22D3EE" stroke-opacity=".6"/>
+<text class="mono" x="312" y="208" style="fill:#F2F0EB">FLEET · 182 TRUCKS</text><text class="mono" x="312" y="224">LAT 1.3521 N</text><text class="mono" x="312" y="240">LON 103.819 E</text>
+<circle class="blink" cx="410" cy="203" r="3.5" fill="#A3E635"/>
+
+</svg>

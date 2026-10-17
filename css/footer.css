@@ -1,0 +1,4 @@
+.foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.6rem var(--gutter) 2.2rem; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.foot-name { font-family: var(--font-display); font-weight: 700; font-size: 15px; letter-spacing: -.02em; }
+.foot-top { color: var(--muted); transition: color .25s var(--ease-out); }
+.foot-top:hover { color: var(--c1); }

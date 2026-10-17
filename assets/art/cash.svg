@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Order-to-cash payment timing and SME default prediction" class="art-cash">
+<title>Order-to-cash payment timing and SME default prediction</title>
+<defs>
+<linearGradient id="cash-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#FF6B2C"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient>
+<linearGradient id="cash-gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6B2C" stop-opacity=".55"/><stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/></linearGradient>
+<filter id="cash-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="cash-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<pattern id="cash-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#F2F0EB" stroke-opacity=".06"/></pattern>
+</defs>
+<style>
+.art-cash .ln{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.art-cash .mono{font:500 9px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.08em;fill:#9AA0AB}
+.art-cash .flow{stroke-dasharray:6 8;animation:cash-flow 2.4s linear infinite}
+.art-cash .pulse{animation:cash-pulse 2.6s ease-in-out infinite}
+.art-cash .blink{animation:cash-blink 1.6s steps(2,end) infinite}
+.art-cash .scan{animation:cash-scan 3.2s ease-in-out infinite}
+.art-cash .spin{transform-origin:center;transform-box:fill-box;animation:cash-spin 12s linear infinite}
+.art-cash .float{animation:cash-float 5s ease-in-out infinite}
+@keyframes cash-flow{to{stroke-dashoffset:-28}}
+@keyframes cash-pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes cash-blink{50%{opacity:.15}}
+@keyframes cash-scan{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--d,80px))}}
+@keyframes cash-spin{to{transform:rotate(360deg)}}
+@keyframes cash-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+@media (prefers-reduced-motion:reduce){.art-cash *{animation:none}}
+</style>
+<rect width="480" height="300" fill="url(#cash-grid)"/>
+<ellipse cx="240" cy="160" rx="200" ry="110" fill="#FF6B2C" fill-opacity=".12" filter="url(#cash-blur)"/>
+
+<path d="M60 200 C 140 200, 170 80, 240 80 S 340 200, 420 200" fill="url(#cash-gv)"/>
+<path class="ln" d="M60 200 C 140 200, 170 80, 240 80 S 340 200, 420 200" stroke="#FF6B2C" stroke-width="2"/>
+<line x1="40" y1="220" x2="440" y2="220" stroke="#9AA0AB" stroke-opacity=".5"/>
+<g transform="translate(80 220)"><line y1="-6" y2="6" stroke="#9AA0AB"/><text class="mono" y="22" text-anchor="middle">D+0</text></g><g transform="translate(150 220)"><line y1="-6" y2="6" stroke="#9AA0AB"/><text class="mono" y="22" text-anchor="middle">D+15</text></g><g transform="translate(220 220)"><line y1="-6" y2="6" stroke="#9AA0AB"/><text class="mono" y="22" text-anchor="middle">D+30</text></g><g transform="translate(290 220)"><line y1="-6" y2="6" stroke="#9AA0AB"/><text class="mono" y="22" text-anchor="middle">D+45</text></g><g transform="translate(360 220)"><line y1="-6" y2="6" stroke="#9AA0AB"/><text class="mono" y="22" text-anchor="middle">D+60</text></g><g transform="translate(430 220)"><line y1="-6" y2="6" stroke="#9AA0AB"/><text class="mono" y="22" text-anchor="middle">D+75</text></g>
+<g stroke="#FFB020" fill="#0E121B"><circle cx="150" cy="190" r="10"/><circle cx="150" cy="190" r="5" fill="#FFB020" fill-opacity=".6"/></g>
+<g stroke="#FFB020" fill="#0E121B"><circle cx="262" cy="150" r="10"/><circle cx="262" cy="150" r="5" fill="#FFB020" fill-opacity=".6"/></g>
+<g class=""><rect x="300" y="100" width="50" height="60" rx="6" fill="#0E121B" stroke="#22D3EE" stroke-opacity=".7"/><path d="M332 100v18h18" fill="none" stroke="#22D3EE" stroke-opacity=".7"/><rect x="312" y="126" width="26" height="3" rx="1.5" fill="#F2F0EB" fill-opacity=".35"/><rect x="312" y="138" width="16" height="3" rx="1.5" fill="#F2F0EB" fill-opacity=".35"/><rect x="312" y="150" width="6" height="3" rx="1.5" fill="#F2F0EB" fill-opacity=".35"/></g>
+<circle class="pulse" cx="240" cy="80" r="7" fill="#FF3D7F"/>
+<text class="mono" x="240" y="62" text-anchor="middle" style="fill:#FF3D7F">EXPECTED PAYMENT</text>
+<rect x="60" y="40" width="140" height="18" rx="9" fill="#06080D" stroke="#A3E635" stroke-opacity=".8"/><text class="mono" x="130" y="52.5" text-anchor="middle" style="fill:#A3E635">DEFAULT RISK · LOW</text>
+<rect class="scan" x="60" y="92" width="360" height="1.5" fill="#22D3EE" fill-opacity=".6" style="--d:110px"/>
+
+</svg>

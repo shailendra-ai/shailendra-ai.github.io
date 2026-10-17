@@ -1,0 +1,72 @@
+.path { padding: 8rem var(--gutter); }
+.path-stage { position: relative; max-width: 1200px; margin: 0 auto; }
+.path-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.path-track { fill: none; stroke: rgba(255,255,255,.08); stroke-width: 2; stroke-dasharray: 4 8; }
+.path-line-glow { fill: none; stroke: url(#path-grad); stroke-width: 12; stroke-linecap: round; opacity: .22; }
+.path-line { fill: none; stroke: url(#path-grad); stroke-width: 3; stroke-linecap: round; }
+.path-comet { fill: #fff; opacity: 0; }
+.path-comet-halo { fill: url(#path-halo); opacity: 0; }
+.path-stage.is-drawing .path-comet { opacity: 1; }
+.path-stage.is-drawing .path-comet-halo { opacity: 1; }
+
+.path-list { list-style: none; margin: 0; padding: 2rem 0 3rem; display: grid; gap: 1.2rem; }
+.path-node { position: relative; display: grid; grid-template-columns: 1fr 160px 1fr; align-items: center; min-height: 140px; }
+.path-node:nth-child(odd) .path-card { grid-column: 1; justify-self: end; }
+.path-node:nth-child(even) .path-card { grid-column: 3; justify-self: start; }
+.path-marker {
+  position: absolute; left: 0; top: 0;
+  width: 18px; height: 18px; margin: -9px 0 0 -9px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.35);
+  background: var(--bg);
+  box-shadow: 0 0 0 4px rgba(5,8,22,.9);
+  transition: transform .5s var(--ease-spring), border-color .4s var(--ease-out), box-shadow .4s var(--ease-out), background-color .4s var(--ease-out);
+  z-index: 1;
+}
+.path-marker::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: transparent; transition: background-color .4s var(--ease-out); }
+.path-node.is-active .path-marker { border-color: var(--c1); transform: scale(1.35); box-shadow: 0 0 0 4px rgba(5,8,22,.9), 0 0 24px rgba(var(--c1-rgb),.8); }
+.path-node.is-active .path-marker::after { background: var(--c1); }
+.path-node--now .path-marker { border-color: rgba(var(--c3-rgb),.6); }
+.path-node--now.is-active .path-marker { border-color: var(--c3); box-shadow: 0 0 0 4px rgba(5,8,22,.9), 0 0 30px rgba(var(--c3-rgb),.9); animation: path-pulse 1.8s ease-in-out infinite; }
+.path-node--now.is-active .path-marker::after { background: var(--c3); }
+@keyframes path-pulse { 0%, 100% { transform: scale(1.35); } 50% { transform: scale(1.7); } }
+
+.path-card {
+  position: relative;
+  width: min(100%, 420px);
+  padding: 1.3rem 1.5rem 1.4rem;
+  opacity: 0; transform: translateY(26px);
+  transition: opacity .8s var(--ease-out), transform .8s var(--ease-out), box-shadow .4s var(--ease-out);
+}
+.path-node.is-in .path-card { opacity: 1; transform: none; }
+.path-card:hover { box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 36px rgba(var(--c2-rgb),.25); }
+.path-node.is-active .path-card { border-color: rgba(var(--c1-rgb),.35); }
+.path-node--now.is-active .path-card { border-color: rgba(var(--c3-rgb),.45); box-shadow: 0 0 40px rgba(var(--c3-rgb),.15); }
+/* connector from card to marker */
+.path-card::before { content: ""; position: absolute; top: 50%; width: 70px; height: 1px; background: linear-gradient(90deg, rgba(255,255,255,.3), transparent); opacity: 0; transition: opacity .6s var(--ease-out) .2s; }
+.path-node:nth-child(odd) .path-card::before { left: 100%; }
+.path-node:nth-child(even) .path-card::before { right: 100%; background: linear-gradient(270deg, rgba(255,255,255,.3), transparent); }
+.path-node.is-in .path-card::before { opacity: 1; }
+
+.path-year {
+  display: block;
+  font-family: var(--font-display); font-weight: 700; letter-spacing: -.04em; line-height: 1;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  margin-bottom: .5rem;
+}
+.path-node--now .path-year { background: linear-gradient(120deg, var(--c3), var(--text)); -webkit-background-clip: text; background-clip: text; }
+.path-title { margin: 0 0 .4rem; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; letter-spacing: -.01em; }
+.path-text { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--muted); }
+
+@media (max-width: 800px) {
+  .path-stage { margin: 0; }
+  .path-node { grid-template-columns: 48px 1fr; min-height: 0; }
+  .path-node:nth-child(odd) .path-card, .path-node:nth-child(even) .path-card { grid-column: 2; justify-self: start; width: 100%; }
+  .path-card::before { display: none; }
+  .path-year { font-size: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .path-card { opacity: 1; transform: none; transition: none; }
+  .path-node--now.is-active .path-marker { animation: none; }
+}
