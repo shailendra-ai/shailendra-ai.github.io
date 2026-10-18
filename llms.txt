@@ -1,0 +1,18 @@
+# Shailendra Kumar
+
+> Head of AI at Pan-United Corporation, Singapore. Built the company's AI function from zero (2020→) and leads an 8-person team shipping generative-AI and machine-learning systems into concrete logistics, finance and procurement. 16 years across hydrogen fuel cells (Thermax), global supply-chain analytics (Accenture) and generative AI (Pan-United). IIT Bombay dual degree; SPJIMR MBA.
+
+Contact: shailendra.eos@gmail.com. Location: Singapore (GMT+8). Open to conversations about building AI functions, advisory and speaking.
+
+## Key facts
+- Four generative-AI systems in production save about 630 hours of manual work a month (up to 90% less manual effort).
+- Hired, trained and leads an 8-person AI team built from zero; four promotions in five years (Data Scientist → Head of AI).
+- Earlier: analytics that saved Pearson US$35M in inventory and US$5M in P&L; Kellogg's Europe forecasting for 1,500 SKUs in 14 countries (accuracy 62.5% → 75%); Pratt & Whitney supplier-delay prediction at 84% accuracy.
+- Awards: Star Innovator Award (Accenture India, 2018); Logistics & Supply Chain Excellence Award (Accenture); ND Joshi Innovation Award (Thermax); national award from the Prime Minister of India (fuel-cell project).
+- Stack: LLaMA, Qwen, Gemma, OpenAI API, Whisper, PyTorch, TensorFlow, vLLM, LangGraph, LangChain, CrewAI, FastAPI, Python, Docker, Google Cloud (Vertex AI, BigQuery, Dataflow, Cloud Run), PostgreSQL, Oracle ERP, Tableau.
+
+## Pages
+- [Home](https://shailendra-ai.github.io/): the full profile with work, career path, stack and contact.
+- [Full profile in Markdown](https://shailendra-ai.github.io/llms-full.txt): every project and timeline entry, for retrieval.
+- [JSON Resume](https://shailendra-ai.github.io/resume.json): structured resume data.
+- [GitHub](https://github.com/shailendra-ai)

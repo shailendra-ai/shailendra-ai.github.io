@@ -1,0 +1,171 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Shailendra Kumar",
+    "label": "Head of AI, Pan-United",
+    "email": "shailendra.eos@gmail.com",
+    "url": "https://shailendra-ai.github.io/",
+    "summary": "Head of AI at Pan-United, Singapore. Built the company's AI function from zero and leads an 8-person team shipping generative-AI systems into logistics, finance and procurement.",
+    "image": "https://shailendra-ai.github.io/assets/og.png",
+    "location": {
+      "city": "Singapore",
+      "countryCode": "SG"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "shailendra-ai",
+        "url": "https://github.com/shailendra-ai"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Pan-United Corporation",
+      "location": "Singapore",
+      "position": "Head of AI (Data Scientist 2020 → Senior Data Scientist 2021 → Assistant Manager 2022 → Manager, AI and Analytics 2024 → Head of AI)",
+      "startDate": "2020-01",
+      "summary": "Built the AI function from zero; leads an 8-person team shipping generative-AI and ML systems into logistics, finance and procurement.",
+      "highlights": [
+        "Logistics documents read by a vision model: Delivery orders and weighbridge slips read by a vision LLM and pushed straight into the Go Truck app.",
+        "Credit assessment from financial statements: A multi-agent system reads statements, payment history and ratios in parallel and assembles a credit view in minutes.",
+        "Quotations turned into purchase requisitions: A vision model extracts line items, prices and terms from supplier PDFs and photos and drafts the requisition.",
+        "Accounts payable matched against Oracle ERP: Agents extract and cross-check purchase orders, invoices and delivery notes, with human checkpoints where a wrong match costs money.",
+        "Daily order forecasting: An LSTM network forecasts daily order volumes at 86% accuracy and feeds resource and inventory planning.",
+        "Signature verification: ResNet-50 with triplet loss verifies signatures on delivery paperwork; F-score 0.88.",
+        "Voice analytics and chatbot: Whisper-based analytics on customer calls, plus a context-aware chatbot built on the same foundation.",
+        "Order-to-cash and SME default prediction: Random Forest predicts invoice payment timing; logistic regression flags SME default risk, with Tableau dashboards for the credit team.",
+        "Real-time GPS data platform: A big-data platform on Google Cloud ingests live GPS from the truck fleet for operational visibility.",
+        "Client programmes abroad: Deep-learning operations transformation for BridgeMan in New Zealand; automated financial reporting for Eugene Corporation in South Korea."
+      ]
+    },
+    {
+      "name": "Accenture",
+      "location": "Mumbai, India",
+      "position": "Analytics Specialist, Applied Intelligence",
+      "startDate": "2017-02",
+      "endDate": "2020-01",
+      "highlights": [
+        "Pearson supply-chain transformation: An automated inventory-optimisation tool deployed in 12+ countries; US$35M inventory and US$5M P&L saved in one year.",
+        "Kellogg's Europe demand forecasting: An automated ETL and sales-forecasting pipeline for 1,500+ SKUs across 14 countries; accuracy 62.5% to 75%.",
+        "Pratt & Whitney supplier delay prediction: K-Means and Random Forest predict late deliveries of aircraft-engine components at 84% accuracy.",
+        "Pearson book returns and adoption: Pipelines over large unstructured datasets; book-return prediction over a 3-month horizon at 80% accuracy.",
+        "Star Innovator Award 2018"
+      ]
+    },
+    {
+      "name": "Thermax Ltd",
+      "location": "Pune, India",
+      "position": "Assistant Manager, Hydrogen Fuel Cell Division (founding team)",
+      "startDate": "2010-06",
+      "endDate": "2015-12",
+      "highlights": [
+        "Fuel-cell shop-floor data platform: A .NET and SQL Server data-acquisition platform with an ASP.NET front end, deployed on six shop floors; 1,000+ QC hours saved.",
+        "ND Joshi Innovation Award"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "SP Jain Institute of Management & Research",
+      "area": "Operations and Supply Chain",
+      "studyType": "MBA",
+      "endDate": "2016",
+      "score": "3.27/4"
+    },
+    {
+      "institution": "Indian Institute of Technology Bombay",
+      "area": "Metallurgical Engineering and Materials Science",
+      "studyType": "B.Tech + M.Tech",
+      "endDate": "2009",
+      "score": "8.84/10"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Star Innovator Award",
+      "date": "2018",
+      "awarder": "Accenture India"
+    },
+    {
+      "title": "Logistics & Supply Chain Excellence Award",
+      "awarder": "Accenture"
+    },
+    {
+      "title": "ND Joshi Innovation Award",
+      "awarder": "Thermax"
+    },
+    {
+      "title": "National award for the hydrogen fuel-cell project",
+      "awarder": "Prime Minister of India"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Generative AI and agents",
+      "keywords": [
+        "LLaMA",
+        "Qwen",
+        "Gemma",
+        "OpenAI API",
+        "vLLM",
+        "LangGraph",
+        "LangChain",
+        "CrewAI",
+        "Vision LLMs"
+      ]
+    },
+    {
+      "name": "Machine learning",
+      "keywords": [
+        "PyTorch",
+        "TensorFlow",
+        "Transformers",
+        "Whisper",
+        "LSTM",
+        "ResNet",
+        "scikit-learn"
+      ]
+    },
+    {
+      "name": "Cloud and data",
+      "keywords": [
+        "Google Cloud",
+        "Vertex AI",
+        "BigQuery",
+        "Dataflow",
+        "Cloud Run",
+        "PostgreSQL",
+        "Oracle ERP",
+        "SQL",
+        "Tableau"
+      ]
+    },
+    {
+      "name": "Delivery",
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "MLOps",
+        "CI/CD",
+        "Git",
+        "AI governance"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native"
+    }
+  ],
+  "meta": {
+    "canonical": "https://shailendra-ai.github.io/",
+    "lastModified": "2026-10-18"
+  }
+}

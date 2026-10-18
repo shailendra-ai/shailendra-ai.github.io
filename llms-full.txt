@@ -1,0 +1,62 @@
+# Shailendra Kumar — Head of AI, Pan-United, Singapore
+
+Head of AI at Pan-United, Singapore. Built the company's AI function from zero and leads an 8-person team shipping generative-AI systems into logistics, finance and procurement.
+
+Contact: shailendra.eos@gmail.com · Singapore (GMT+8) · GitHub: https://github.com/shailendra-ai
+
+## Summary
+
+AI leader with 16 years of experience delivering generative AI, machine learning, deep learning and cloud solutions. Built and leads cross-functional AI teams, owns the full solution lifecycle from ideation and stakeholder buy-in to MLOps and production rollout, and contributes to enterprise AI policy and governance. Extensive experience on Google Cloud (Vertex AI, BigQuery, Dataflow). Managed stakeholders across North America, EMEA and APAC.
+
+## Work
+
+### Pan-United (2020–now)
+
+- **Logistics documents read by a vision model** (Thousands of docs / month). Every concrete delivery produces a delivery order and a weighbridge slip, and for years both were keyed into the Go Truck application by hand. A vision-enabled LLM now reads each document, extracts the fields, validates them against the order and writes the result into the app. It handles thousands of documents a month and removed the single largest source of manual effort in the logistics office. Stack: Vision LLMs (Qwen, LLaMA), vLLM, FastAPI, Cloud Run, PostgreSQL.
+- **Credit assessment from financial statements** (Minutes, not days). Most of the order book is SME customers, and assessing their creditworthiness meant a finance analyst reading statements for days. A set of agents now works in parallel: one parses the financial statements, one reads payment history, one computes and benchmarks ratios, and a coordinator assembles the credit view with its reasoning laid out for a human to approve. Turnaround moved from days to minutes. Stack: LangGraph, CrewAI, Open LLMs, PyTorch, PostgreSQL.
+- **Quotations turned into purchase requisitions** (Buyers review, not retype). Supplier quotations arrive as PDFs, scans and phone photos. The vision model reads them regardless of layout, extracts line items, quantities, prices and terms, and drafts the purchase requisition in the procurement system. Buyers now review a draft instead of retyping it, and the error rate on requisitions dropped with the manual effort. Stack: Vision LLMs, Transformers, FastAPI, Docker, Google Cloud.
+- **Accounts payable matched against Oracle ERP** (Three-way match, automated). Three-way matching is where finance teams spend their evenings: every invoice has to agree with a purchase order and a delivery note. Vision-enabled agents extract the three documents, cross-check quantities, prices and parties, and post the match into Oracle ERP. Human-in-the-loop checkpoints sit exactly where a wrong match would cost money, which is what made the finance team trust it. Stack: Multi‑agent system, Vision LLMs, Oracle ERP, Python.
+- **Daily order forecasting** (86% accuracy). Concrete cannot be stockpiled, so planning trucks, drivers and raw material depends on knowing tomorrow's orders. A deep-learning model built on LSTM networks forecasts daily order volumes with 86% accuracy, and the forecast now drives resource allocation and inventory planning across plants. Stack: LSTM, TensorFlow, PyTorch, BigQuery.
+- **Signature verification** (F‑score 0.88). Signed delivery paperwork is the legal proof that concrete was accepted on site, and disputed signatures were costly. A verification model built on ResNet-50 with a triplet-loss head compares signatures against known references and flags mismatches, reaching an F-score of 0.88 on production data. Stack: PyTorch, ResNet‑50, Triplet loss.
+- **Voice analytics and chatbot** (Real‑time call insight). Customer calls carried signals nobody had time to listen for. A voice-analytics pipeline built on OpenAI's Whisper transcribes and analyses interactions in near real time, and a context-aware chatbot built on top of it handles routine customer questions, lifting engagement and freeing the service team. Stack: Whisper, LLMs, FastAPI.
+- **Order-to-cash and SME default prediction** (Faster collections). Two models for the finance team. A Random Forest predicts when each invoice will actually be paid, so collections can prioritise, shortening the cash cycle. A logistic-regression model flags SMEs at risk of default early, surfaced through interactive Tableau dashboards that the credit team uses to intervene before the loss. Stack: scikit‑learn, Random Forest, Logistic regression, Tableau.
+- **Real-time GPS data platform** (Live fleet visibility). The first thing the AI function built: a scalable platform on Google Cloud that ingests real-time GPS from the entire truck fleet, cleans it, and makes it queryable in BigQuery. It gave operations live visibility they never had and became the data backbone every later model was trained on. Stack: Google Cloud, Dataflow, BigQuery, Cloud Functions.
+- **Client programmes abroad** (2 countries). Two programmes delivered for external clients. For BridgeMan in New Zealand, an end-to-end deep-learning and machine-learning programme that automated critical supply-chain and operational processes, delivered hand in hand with the client's leadership. For Eugene Corporation in South Korea, a reporting transformation: integrated data pipelines and automated financial reporting on Tableau across business units. Stack: Deep learning, Machine learning, Tableau, Data pipelines.
+
+### Accenture Applied Intelligence (2017–2020)
+
+- **Pearson supply-chain transformation** (US$35M saved). Part of Pearson's multi-year, multi-million-dollar global supply-chain transformation. Built a fully automated inventory-optimisation tool in Python covering extraction, processing, exploratory analysis, statistics and reporting, rolled out to more than 12 countries, and led the Tableau visualisation for procurement and inventory analytics. The work saved US$35M in inventory and US$5M in P&L in 2017-18 and won Accenture's Logistics & Supply Chain Excellence Award. Stack: Python, Excel automation, Tableau, Statistical analysis.
+- **Kellogg's Europe demand forecasting** (62.5% → 75%). Built a fully automated ETL pipeline and statistical sales-forecasting tool in Python for more than 1,500 SKUs across 14 European countries, with the visualisation layer used by internal stakeholders. Forecast accuracy rose from a 62.5% baseline to 75% within a year and bias fell by five points. Stack: Python, PySpark, SQL, Tableau.
+- **Pratt & Whitney supplier delay prediction** (84% accuracy). Delivery assurance for aircraft engines suffered from demand swings, schedule changes, pull-ins and push-outs across the supply chain. Designed and built, solo, machine-learning models combining K-Means clustering and Random Forest to predict which supplier deliveries would be late, reaching 84% accuracy, and defined the KPIs and Tableau dashboards the team ran on. Stack: Python, K‑Means, Random Forest, Tableau.
+- **Pearson book returns and adoption** (80% accuracy). Built an elaborate pipeline to clean and process large unstructured datasets, then models that predict book returns over a three-month horizon at 80% accuracy and the adoption rate of titles across every line of business, giving planners a view of demand they previously guessed at. Stack: Python, Machine learning, Data pipelines.
+
+### Thermax (2010–2015)
+
+- **Fuel-cell shop-floor data platform** (1,000+ hours saved). One of the three-member founding team of Thermax's hydrogen fuel-cell division, a project that received a national award from the Prime Minister of India. Built the data-acquisition application that pulled data from manufacturing and test equipment, processed and stored it, and the ASP.NET web application that put it in front of engineers. Deployed on six shop floors, it saved over 1,000 hours of QC effort and won the ND Joshi Innovation Award, Thermax's highest honour. Stack: .NET, SQL Server, ASP.NET.
+
+## Career path
+- **2009** — IIT Bombay. B.Tech and M.Tech in Metallurgical Engineering and Materials Science. Grade 8.84 of 10.
+- **2010** — Thermax, Pune. One of three founders of the hydrogen fuel‑cell division. National award from the Prime Minister of India; ND Joshi Innovation Award.
+- **2016** — SPJIMR, MBA. Operations and supply chain. Regression study on 90,000 microfinance borrowers for Annapurna Credit Society.
+- **2017** — Accenture, Mumbai. Applied Intelligence team. Pearson, Kellogg's and Pratt & Whitney programmes.
+- **2018** — Star Innovator Award. Accenture India's innovation award, plus the Logistics & Supply Chain Excellence Award.
+- **2020** — Pan‑United, Singapore. Joined as the first data scientist. Started the AI function from zero.
+- **2021** — Senior Data Scientist. First deep‑learning models in production.
+- **2022** — Assistant Manager. Google Cloud data platform live; GPS big‑data pipeline for the fleet.
+- **2024** — Head of AI. Eight‑person team; four generative‑AI systems in production.
+- **Now** — Still building. About 630 hours saved every month. Contributor to company AI policy and governance.
+
+## Education
+- B.Tech and M.Tech in Metallurgical Engineering and Materials Science, Indian Institute of Technology Bombay, 2009 (8.84/10).
+- MBA, Operations and Supply Chain, SP Jain Institute of Management & Research, 2016.
+
+## Recognition
+- Star Innovator Award, Accenture India, 2018.
+- Logistics & Supply Chain Excellence Award, Accenture, for the Pearson programme.
+- ND Joshi Innovation Award, Thermax's highest honour across all functions.
+- National award from the Prime Minister of India for the Thermax hydrogen fuel-cell project.
+
+## Stack
+Models: LLaMA, Qwen, Gemma, OpenAI API, Whisper, Transformers, PyTorch, TensorFlow, vLLM.
+Agents and delivery: LangGraph, LangChain, CrewAI, human-in-the-loop design, FastAPI, Python, Docker, MLOps with CI/CD and automated retraining, Git.
+Cloud and data: Google Cloud (Vertex AI, BigQuery, Dataflow, Cloud Run, Cloud Functions), PostgreSQL, Oracle ERP, SQL, Tableau.

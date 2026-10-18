@@ -187,6 +187,9 @@ body { font-stretch: 100%; }
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease-out), transform .9s var(--ease-out); }
 .reveal.is-in { opacity: 1; transform: none; }
 
+/* Without JavaScript, nothing stays hidden */
+.no-js .reveal, .no-js .work-card, .no-js .path-card { opacity: 1; transform: none; translate: none; transition: none; }
+
 /* ---------- Motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
