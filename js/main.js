@@ -86,7 +86,7 @@
   if (y) y.textContent = String(new Date().getFullYear());
 
   /* LinkedIn: set your URL once here. Until then the link stays hidden. */
-  const LINKEDIN = '';
+  const LINKEDIN = 'https://www.linkedin.com/in/shailendrakr1';
   document.querySelectorAll('[data-linkedin]').forEach((li) => {
     if (LINKEDIN) { li.href = LINKEDIN; li.hidden = false; } else { li.remove(); }
   });

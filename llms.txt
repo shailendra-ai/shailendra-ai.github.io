@@ -15,4 +15,5 @@ Contact: shailendra.eos@gmail.com. Location: Singapore (GMT+8). Open to conversa
 - [Home](https://shailendra-ai.github.io/): the full profile with work, career path, stack and contact.
 - [Full profile in Markdown](https://shailendra-ai.github.io/llms-full.txt): every project and timeline entry, for retrieval.
 - [JSON Resume](https://shailendra-ai.github.io/resume.json): structured resume data.
+- [LinkedIn](https://www.linkedin.com/in/shailendrakr1)
 - [GitHub](https://github.com/shailendra-ai)

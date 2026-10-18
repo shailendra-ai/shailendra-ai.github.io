@@ -183,6 +183,11 @@ body { font-stretch: 100%; }
 }
 .btn--primary:hover::after { transform: translateX(120%); }
 
+/* LinkedIn brand button: LinkedIn blue, white text, the "in" mark */
+.btn--linkedin { background: #0A66C2; border-color: #0A66C2; color: #fff; box-shadow: 0 0 40px rgba(10, 102, 194, .45); }
+.btn--linkedin:hover { background: #004182; border-color: #004182; box-shadow: 0 0 60px rgba(10, 102, 194, .6); }
+.btn__icon { flex: none; }
+
 /* ---------- Scroll reveal (driven by js/main.js) ---------- */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease-out), transform .9s var(--ease-out); }
 .reveal.is-in { opacity: 1; transform: none; }

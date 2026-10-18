@@ -13,6 +13,11 @@
     },
     "profiles": [
       {
+        "network": "LinkedIn",
+        "username": "shailendrakr1",
+        "url": "https://www.linkedin.com/in/shailendrakr1"
+      },
+      {
         "network": "GitHub",
         "username": "shailendra-ai",
         "url": "https://github.com/shailendra-ai"
